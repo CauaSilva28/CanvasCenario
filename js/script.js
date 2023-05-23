@@ -16,8 +16,6 @@ function chao(){
 }
 
 function montanha(){
-    ctx.strokeStyle = '#c44823';
-    ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,500);
     ctx.lineTo(180,350);
@@ -34,17 +32,14 @@ function montanha(){
     ctx.lineTo(0,500);
     ctx.fillStyle = '#c44823';
     ctx.fill();
-    ctx.stroke();
 }
 
 function montanha2(){   
-    ctx.strokeStyle = '#a33f21';
-    ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,530);
     ctx.lineTo(200,600);
     ctx.lineTo(300,500);
-    ctx.lineTo(500,600);
+    ctx.lineTo(450,600);
     ctx.lineTo(650,450);
     ctx.lineTo(800,600);
     ctx.lineTo(950,500);
@@ -56,12 +51,9 @@ function montanha2(){
     ctx.lineTo(0,530);
     ctx.fillStyle = '#a33f21';
     ctx.fill();
-    ctx.stroke();
 }
 
 function montanha3(){
-    ctx.strokeStyle = '#cf5808';
-    ctx.lineWidth = 1;
     ctx.beginPath();
     ctx.moveTo(0,350);
     ctx.lineTo(150,450);
@@ -75,41 +67,18 @@ function montanha3(){
     ctx.lineTo(0,350);
     ctx.fillStyle = '#cf5808';
     ctx.fill();
-    ctx.stroke();
 }
 
 function sol(){
-    ctx.strokeStyle = '#ff9900';
-    ctx.lineWidth = 10;
+    ctx.shadowColor = '#fffbb0'
+    ctx.shadowBlur = 200;
     ctx.beginPath();
     ctx.arc(850,400,300,0,Math.PI*2,true);
     ctx.fillStyle = '#ffb300';
     ctx.fill();
-    ctx.stroke();
 
-    ctx.strokeStyle = '#ffaa00';
-    ctx.lineWidth = 10;
-    ctx.beginPath();
-    ctx.arc(950,220,50,0,Math.PI*2,true);
-    ctx.fillStyle = '#ffae00';
-    ctx.fill();
-    ctx.stroke();
-    
-    ctx.strokeStyle = '#ffaa00';
-    ctx.lineWidth = 10;
-    ctx.beginPath();
-    ctx.arc(700,250,30,0,Math.PI*2,true);
-    ctx.fillStyle = '#ffae00';
-    ctx.fill();
-    ctx.stroke();
-
-    ctx.strokeStyle = '#ffaa00';
-    ctx.lineWidth = 10;
-    ctx.beginPath();
-    ctx.arc(900,400,20,0,Math.PI*2,true);
-    ctx.fillStyle = '#ffae00';
-    ctx.fill();
-    ctx.stroke();
+    ctx.shadowColor = "transparent";
+    ctx.shadowBlur = 0;
 }
 
 function nuvens(){
@@ -167,8 +136,8 @@ function passaro(){
     ctx.strokeStyle = '#000';
     ctx.beginPath();
     ctx.moveTo(300,200);
-    ctx.lineTo(340,230);
-    ctx.lineTo(380,200);
+    ctx.lineTo(320,220);
+    ctx.lineTo(340,200);
     ctx.stroke();
 }
 
