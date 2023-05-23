@@ -16,7 +16,7 @@ function chao(){
 }
 
 function montanha(){
-    ctx.strokeStyle = '#9c4b0c';
+    ctx.strokeStyle = '#c44823';
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,500);
@@ -32,13 +32,13 @@ function montanha(){
     ctx.lineTo(1200,650);
     ctx.lineTo(0,650);
     ctx.lineTo(0,500);
-    ctx.fillStyle = '#ab510c';
+    ctx.fillStyle = '#c44823';
     ctx.fill();
     ctx.stroke();
 }
 
 function montanha2(){   
-    ctx.strokeStyle = '#963f23';
+    ctx.strokeStyle = '#a33f21';
     ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.moveTo(0,530);
@@ -54,14 +54,14 @@ function montanha2(){
     ctx.lineTo(1200,700);
     ctx.lineTo(0,700);
     ctx.lineTo(0,530);
-    ctx.fillStyle = '#a1472a';
+    ctx.fillStyle = '#a33f21';
     ctx.fill();
     ctx.stroke();
 }
 
 function montanha3(){
-    ctx.strokeStyle = '#7d3c14';
-    ctx.lineWidth = 5;
+    ctx.strokeStyle = '#cf5808';
+    ctx.lineWidth = 1;
     ctx.beginPath();
     ctx.moveTo(0,350);
     ctx.lineTo(150,450);
@@ -73,7 +73,7 @@ function montanha3(){
     ctx.lineTo(1200,700);
     ctx.lineTo(0,700);
     ctx.lineTo(0,350);
-    ctx.fillStyle = "#8f471a";
+    ctx.fillStyle = '#cf5808';
     ctx.fill();
     ctx.stroke();
 }
@@ -91,7 +91,7 @@ function sol(){
     ctx.lineWidth = 10;
     ctx.beginPath();
     ctx.arc(950,220,50,0,Math.PI*2,true);
-    ctx.fillStyle = "#ffae00";
+    ctx.fillStyle = '#ffae00';
     ctx.fill();
     ctx.stroke();
     
@@ -99,7 +99,7 @@ function sol(){
     ctx.lineWidth = 10;
     ctx.beginPath();
     ctx.arc(700,250,30,0,Math.PI*2,true);
-    ctx.fillStyle = "#ffae00";
+    ctx.fillStyle = '#ffae00';
     ctx.fill();
     ctx.stroke();
 
@@ -107,8 +107,68 @@ function sol(){
     ctx.lineWidth = 10;
     ctx.beginPath();
     ctx.arc(900,400,20,0,Math.PI*2,true);
-    ctx.fillStyle = "#ffae00";
+    ctx.fillStyle = '#ffae00';
     ctx.fill();
+    ctx.stroke();
+}
+
+function nuvens(){
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(100,200,25,0,Math.PI*2,true);
+    ctx.arc(150,200,40,0,Math.PI*2,true);
+    ctx.arc(200,200,25,0,Math.PI*2,true);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(500,100,30,0,Math.PI*2,true);
+    ctx.arc(550,100,45,0,Math.PI*2,true);
+    ctx.arc(600,100,30,0,Math.PI*2,true);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(450,300,25,0,Math.PI*2,true);
+    ctx.arc(500,300,40,0,Math.PI*2,true);
+    ctx.arc(550,300,25,0,Math.PI*2,true);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(1000,100,25,0,Math.PI*2,true);
+    ctx.arc(1050,100,40,0,Math.PI*2,true);
+    ctx.arc(1100,100,25,0,Math.PI*2,true);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+    ctx.stroke();
+}
+
+function passaro(){
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = '#000';
+    ctx.beginPath();
+    ctx.moveTo(900,300);
+    ctx.lineTo(940,330);
+    ctx.lineTo(980,300);
+    ctx.stroke();
+
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = '#000';
+    ctx.beginPath();
+    ctx.moveTo(300,200);
+    ctx.lineTo(340,230);
+    ctx.lineTo(380,200);
     ctx.stroke();
 }
 
@@ -117,3 +177,5 @@ montanha3();
 montanha();
 montanha2();
 chao();
+nuvens();
+passaro();
