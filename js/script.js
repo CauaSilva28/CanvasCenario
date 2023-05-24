@@ -74,10 +74,10 @@ function sol(){
     ctx.shadowBlur = 200;
     ctx.beginPath();
     ctx.arc(850,400,300,0,Math.PI*2,true);
-    ctx.fillStyle = '#ffb300';
+    ctx.fillStyle = '#ffc400';
     ctx.fill();
 
-    ctx.shadowColor = "transparent";
+    ctx.shadowColor = 'transparent';
     ctx.shadowBlur = 0;
 }
 
@@ -128,16 +128,75 @@ function passaro(){
     ctx.strokeStyle = '#000';
     ctx.beginPath();
     ctx.moveTo(900,300);
-    ctx.lineTo(940,330);
-    ctx.lineTo(980,300);
+    ctx.quadraticCurveTo(930,300,940,330);
+    ctx.quadraticCurveTo(950,300,980,300);
     ctx.stroke();
 
     ctx.lineWidth = 5;
     ctx.strokeStyle = '#000';
     ctx.beginPath();
     ctx.moveTo(300,200);
-    ctx.lineTo(320,220);
-    ctx.lineTo(340,200);
+    ctx.quadraticCurveTo(330,200,330,220);
+    ctx.quadraticCurveTo(350,200,370,210);
+    ctx.stroke();
+}
+
+function arvores(){
+    ctx.beginPath();
+    ctx.arc(1000,620,60,0,Math.PI*2,true);
+    ctx.fillStyle = '#39571e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(1000,550,45,0,Math.PI*2,true);
+    ctx.fillStyle = '#446626';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(1000,500,35,0,Math.PI*2,true);
+    ctx.fillStyle = '#537d2e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#4a3423';
+    ctx.lineWidth = 8;
+    ctx.moveTo(1000,750);
+    ctx.lineTo(1000,630);
+    ctx.quadraticCurveTo(970,630,970,610);
+    ctx.moveTo(1000,630);
+    ctx.lineTo(1000,570);
+    ctx.quadraticCurveTo(1020,570,1020,545);
+    ctx.moveTo(1000,570);
+    ctx.lineTo(1000,500);
+    ctx.stroke();
+
+
+    ctx.beginPath();
+    ctx.arc(100,620,60,0,Math.PI*2,true);
+    ctx.fillStyle = '#39571e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(100,550,45,0,Math.PI*2,true);
+    ctx.fillStyle = '#446626';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(100,500,35,0,Math.PI*2,true);
+    ctx.fillStyle = '#537d2e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#4a3423';
+    ctx.lineWidth = 8;
+    ctx.moveTo(100,750);
+    ctx.lineTo(100,630);
+    ctx.quadraticCurveTo(70,630,70,610);
+    ctx.moveTo(100,630);
+    ctx.lineTo(100,570);
+    ctx.quadraticCurveTo(120,570,120,545);
+    ctx.moveTo(100,570);
+    ctx.lineTo(100,500);
     ctx.stroke();
 }
 
@@ -148,3 +207,4 @@ montanha2();
 chao();
 nuvens();
 passaro();
+arvores();
