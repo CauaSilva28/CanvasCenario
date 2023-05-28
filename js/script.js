@@ -142,21 +142,25 @@ function passaro(){
 }
 
 function arvores(){
+    //Parte de baixo da árvore
     ctx.beginPath();
     ctx.arc(1000,620,60,0,Math.PI*2,true);
     ctx.fillStyle = '#39571e';
     ctx.fill();
 
+    //Parte do meio da árvore
     ctx.beginPath();
     ctx.arc(1000,550,45,0,Math.PI*2,true);
     ctx.fillStyle = '#446626';
     ctx.fill();
 
+    //Parte de cima da árvore
     ctx.beginPath();
     ctx.arc(1000,500,35,0,Math.PI*2,true);
     ctx.fillStyle = '#537d2e';
     ctx.fill();
 
+    //Galhos
     ctx.beginPath();
     ctx.strokeStyle = '#4a3423';
     ctx.lineWidth = 8;
@@ -170,7 +174,7 @@ function arvores(){
     ctx.lineTo(1000,500);
     ctx.stroke();
 
-
+    //Outra árvore
     ctx.beginPath();
     ctx.arc(100,620,60,0,Math.PI*2,true);
     ctx.fillStyle = '#39571e';
@@ -198,6 +202,174 @@ function arvores(){
     ctx.moveTo(100,570);
     ctx.lineTo(100,500);
     ctx.stroke();
+
+    //Outra árvore
+    ctx.beginPath();
+    ctx.arc(700,620,30,0,Math.PI*2,true);
+    ctx.fillStyle = '#39571e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(700,590,20,0,Math.PI*2,true);
+    ctx.fillStyle = '#446626';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(700,565,15,0,Math.PI*2,true);
+    ctx.fillStyle = '#537d2e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#4a3423';
+    ctx.lineWidth = 5;
+    ctx.moveTo(700,680);
+    ctx.lineTo(700,630);
+    ctx.quadraticCurveTo(685,630,685,615);
+    ctx.moveTo(700,630);
+    ctx.lineTo(700,600);
+    ctx.quadraticCurveTo(710,600,710,585);
+    ctx.moveTo(700,600);
+    ctx.lineTo(700,560);
+    ctx.stroke();
+
+    //Outra árvore
+    ctx.beginPath();
+    ctx.arc(300,620,30,0,Math.PI*2,true);
+    ctx.fillStyle = '#39571e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(300,590,20,0,Math.PI*2,true);
+    ctx.fillStyle = '#446626';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(300,565,15,0,Math.PI*2,true);
+    ctx.fillStyle = '#537d2e';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#4a3423';
+    ctx.lineWidth = 5;
+    ctx.moveTo(300,680);
+    ctx.lineTo(300,630);
+    ctx.quadraticCurveTo(285,630,285,615);
+    ctx.moveTo(300,630);
+    ctx.lineTo(300,600);
+    ctx.quadraticCurveTo(310,600,310,585);
+    ctx.moveTo(300,600);
+    ctx.lineTo(300,560);
+    ctx.stroke();
+}
+
+function celeiro(){
+    //Parte principal
+    ctx.beginPath();
+    ctx.moveTo(420,650);
+    ctx.lineTo(420,550);
+    ctx.lineTo(450,500);
+    ctx.lineTo(500,460);
+    ctx.lineTo(550,500);
+    ctx.lineTo(580,550);
+    ctx.lineTo(580,650);
+    ctx.lineTo(420,650);
+    ctx.fillStyle = 'red';
+    ctx.fill();
+
+    //Detalhes parte principal
+    ctx.beginPath();
+    ctx.strokeStyle = '#5e0b0b';
+    ctx.lineWidth = 2;
+    ctx.moveTo(440,650);
+    ctx.lineTo(440,500);
+    ctx.moveTo(460,650);
+    ctx.lineTo(460,480);
+    ctx.moveTo(480,570);
+    ctx.lineTo(480,460);
+    ctx.moveTo(500,570);
+    ctx.lineTo(500,460);
+    ctx.moveTo(520,570);
+    ctx.lineTo(520,460);
+    ctx.moveTo(540,650);
+    ctx.lineTo(540,480);
+    ctx.moveTo(560,650);
+    ctx.lineTo(560,500);
+    ctx.stroke();
+
+    //Telhado
+    ctx.beginPath();
+    ctx.strokeStyle = '#4f2f24';
+    ctx.lineWidth = 2;
+    ctx.moveTo(420,550);
+    ctx.lineTo(410,570)
+    ctx.lineTo(390,570);
+    ctx.lineTo(440,490);
+    ctx.lineTo(500,440);
+    ctx.lineTo(560,490);
+    ctx.lineTo(610,570);
+    ctx.lineTo(590,570);
+    ctx.lineTo(580,550);
+    ctx.lineTo(550,500);
+    ctx.lineTo(500,460);
+    ctx.lineTo(450,500);
+    ctx.lineTo(420,550);
+    ctx.fillStyle = '#5e382b';
+    ctx.fill();
+    ctx.stroke();
+
+    //Porta
+    ctx.beginPath();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 3;
+    ctx.moveTo(470,650);
+    ctx.lineTo(530,650);
+    ctx.moveTo(470,650)
+    ctx.lineTo(470,570);
+    ctx.lineTo(530,570);
+    ctx.lineTo(530,650);
+    ctx.moveTo(470,610);
+    ctx.lineTo(530,610);
+    ctx.moveTo(500,650);
+    ctx.lineTo(500,570);
+    ctx.moveTo(530,650);
+    ctx.lineTo(470,570);
+    ctx.moveTo(470,650);
+    ctx.lineTo(530,570);
+    ctx.moveTo(470,610);
+    ctx.lineTo(500,570);
+    ctx.moveTo(470,610);
+    ctx.lineTo(500,650);
+    ctx.moveTo(500,650);
+    ctx.lineTo(530,610);
+    ctx.moveTo(530,610);
+    ctx.lineTo(500,570);
+    ctx.stroke();
+
+    //Janela
+    ctx.beginPath();
+    ctx.lineWidth = 3;
+    ctx.arc(500,510,15,0,Math.PI,true);
+    ctx.moveTo(485,510);
+    ctx.lineTo(485,535);
+    ctx.lineTo(515,535);
+    ctx.lineTo(515,510);
+    ctx.moveTo(485,518);
+    ctx.lineTo(515,518);
+    ctx.moveTo(500,495);
+    ctx.lineTo(500,535);
+    ctx.fillStyle = '#3f94cc';
+    ctx.fill();
+    ctx.stroke();
+
+    //Caminho
+    ctx.beginPath();
+    ctx.moveTo(470,650);
+    ctx.lineTo(150,800);
+    ctx.lineTo(850,800);
+    ctx.lineTo(530,650);
+    ctx.lineTo(470,650);
+    ctx.fillStyle = '#b89b0b';
+    ctx.fill();
 }
 
 sol();
@@ -208,3 +380,4 @@ chao();
 nuvens();
 passaro();
 arvores();
+celeiro();
