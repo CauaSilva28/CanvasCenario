@@ -43,3 +43,21 @@ Feito por: Cauã Silva e Carlos Alarcon
 <img src='img/arvorecena.png' />
 <img src='img/js7arvore.png' />
 <p>Foram feitos três círculos um maior que o outro que representam as folhas das árvores, sendo o com raio maior o com tom de verde mais escuro e o que fica na parte de baixo, o médio fica no meio e com um tom mais claro e o menor fica em cima com um tom mais claro de verde que os outros. Os galhos foram feitos com linhas retas e curvas "quadraticCurveTo" para serem os galhos curvados no circulo grande e médio, eles foram coloridos com um tom de marrom escuro e foi utlizado o "lineWidth" para dar uma engrossada.</p>
+
+### Como foi feito o celeiro:
+<img src='img/celeirocena.png' />
+<img src='img/js8celeiro.png' />
+<p>O celeiro foi feito usando apenas os comando de "moveTo" que é de onde começa a linha e "lineTo" que é de onde termina a linha e apenas uma vez o "arc" para fazer a janela, além dos de cores "fillStyle" e "strokeStyle" e os de aumentar a largura da linha "lineWidth". </p>
+<p>A primeira seção "//Parte principal" define a forma geral da casa, desenhando um polígono com linhas e preenchendo-o com a cor vermelha.</p> 
+<p>A segunda seção "//Detalhes parte principal" adiciona detalhes à parte principal da casa, desenhando linhas com cores vermelhas mais escuras. </p> 
+<p>A terceira seção "//Telhado" desenha o telhado da casa, criando um polígono com uma cor marrom.</p> 
+<p>A quarta seção "//Porta" desenha a porta da casa, utilizando linhas e a cor branca.</p> 
+<p>A quinta seção "//Janela" desenha uma janela na casa, utilizando uma combinação de linhas e um arco circular pela metade.</p> 
+<p>A sexta seção "//Caminho" desenha um caminho em frente à casa, criando uma forma irregular com uma cor dourada.</p>
+
+### Finalizando:
+<p>Para finalizar, chamamos as funções na seguinte ordem:</p>
+<img src='img/js9.png' />
+
+### Resultado:
+<img src='img/cenario.png' />
