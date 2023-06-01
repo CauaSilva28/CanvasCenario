@@ -53,7 +53,7 @@ Feito por: Cauã Silva e Carlos Alarcon
 <p>A terceira seção "//Telhado" desenha o telhado da casa, criando um polígono com uma cor marrom.</p> 
 <p>A quarta seção "//Porta" desenha a porta da casa, utilizando linhas e a cor branca.</p> 
 <p>A quinta seção "//Janela" desenha uma janela na casa, utilizando uma combinação de linhas e um arco circular pela metade.</p> 
-<p>A sexta seção "//Caminho" desenha um caminho em frente à casa, criando uma forma irregular com uma cor dourada.</p>
+<p>A sexta seção "//Caminho" desenha um caminho em frente à casa, criando uma forma que da um efeito de perspectiva com uma cor dourada.</p>
 
 ### Finalizando:
 <p>Para finalizar, chamamos as funções na seguinte ordem:</p>
